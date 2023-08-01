@@ -102,7 +102,7 @@ def training():
       loss.backward()
       optimizer.step()
 
-      running_loss += loss.item() #Avg loss, we can output the absolute loss for each epoch
+      running_loss += loss.item()
 
     print(f'[{epoch+1}] loss: {running_loss / n_total_steps:.3f}')
 
@@ -147,12 +147,12 @@ def onnx_converter():
   torch.onnx.export(loaded_model, 
                     dummy_input,
                     'model.onnx',
-                    export_params=True,        # store the trained parameter weights inside the model file
-                    do_constant_folding=True,  # whether to execute constant folding for optimization
+                    export_params=True,
+                    do_constant_folding=True,
                     input_names=['input'],
                     output_names=['output'],
                     verbose=True,
-                    dynamic_axes={'input' : {0 : 'batch_size'},    # variable length axes
+                    dynamic_axes={'input' : {0 : 'batch_size'},
                     'output' : {0 : 'batch_size'}})
 
   # Load the ONNX model
@@ -199,7 +199,7 @@ def onnx_inference():
   print(f"Average Inference time: {average_inference_time:.4f} seconds")
 
 if __name__ == '__main__':
-  # training()
+  # training() #Already implemented. Simply uncomment this line to perform training
   pytorch_inference()
   onnx_converter()
   onnx_inference()
