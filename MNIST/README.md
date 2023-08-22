@@ -18,8 +18,7 @@ mnist.py performs the following steps:
 onnx_runtime.py performs the following step:
 - ONNX inference using ONNX Runtime
 
-#### Hardare Specifics
-This simulation was executed on a device with the following specifics:
+#### Hardware Specifics
 - Processor: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz   1.19 GHz
 - Installed RAM: 12.0 GB
 - System Type: 64-bit operating system, x64-based processor
