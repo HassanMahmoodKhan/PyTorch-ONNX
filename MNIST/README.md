@@ -5,6 +5,7 @@ A deep learning model that performs multi-class classification using the benchma
 ### Script Instructions
 
 There are two python script files i.e., mnist.py & onnx_runtime.py.
+
 mnist.py performs the following steps:
 - Importing relevant libraries
 - Downloading the data set
@@ -14,7 +15,7 @@ mnist.py performs the following steps:
 - PyTorch inference
 - Model conversion to ONNX
 
-onnx_runtime.py performs the following steps:
+onnx_runtime.py performs the following step:
 - ONNX inference using ONNX Runtime
 
 #### Hardare Specifics
