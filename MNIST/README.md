@@ -32,7 +32,7 @@ The table below describes the performance metrics recorded.
 ![image](https://github.com/HassanMahmoodKhan/PyTorch-ONNX/assets/97694796/86863dc7-9e88-461e-a885-12722943bc8a)
 
 In terms of accuracy achieved (not important in the scope of this experiment), we can observe that both frameworks produce identical scores. Thus, there is no degradation.
-However, with respect to inference time, there is a stark difference between the two for each test case. The graph below visualizes these performance gains when model inferencing with ONNX Runtime as opposed to PyTorch.
+However, with respect to inference time, there is a stark difference between the two. The graph below visualizes these performance gains when model inferencing with ONNX Runtime as opposed to PyTorch.
 
 ![image](https://github.com/HassanMahmoodKhan/PyTorch-ONNX/assets/97694796/ded8c516-68f9-449e-902a-c6425ff937fc)
 
